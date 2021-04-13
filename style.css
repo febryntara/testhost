@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    padding: 20px 0;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+/* burgermenu */
+.menu-toggle{
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+}
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+}
+/* hamimation */
+
+
+
+/* responsip */
+
+/* tablet */
+@media sceen and (max-width: 768px){
+    nav ul {
+        width: 50%;
+    }
+}
+/* mobile */
+@media sceen and (max-width: 578px){
+    nav ul {
+        display: none;
+    }
+}
